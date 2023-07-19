@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #666;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0; /* Las tarjetas están ocultas al inicio */
+    transition: opacity 1s;
+}
+
+.card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.details {
+    padding: 20px;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/*botones*/
+.nav-list {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Remueve el padding predeterminado */
+    display: flex; /* Los ítems de la lista se mostrarán en una fila */
+    justify-content: space-around; /* Distribuye los ítems de la lista equitativamente en la línea */
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 25px; /* Botones redondeados */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra alrededor de los botones */
+}
+
+.nav-link:hover {
+    background-color: #666;
+    transform: scale(1.1); /* Los botones se amplían un poco cuando pasas el cursor sobre ellos */
+}
+
+.nav-link:active {
+    background-color: #999;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Sombra más pequeña cuando se hace clic en el botón */
+    transform: scale(0.9); /* Los botones se reducen un poco cuando se hace clic en ellos */
+}
+/*texto*/
+.special-text {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    color: #333;
+    text-indent: 50px;
+    line-height: 1.6;
+}
+
+.special-text h3 {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.special-text li {
+    margin-bottom: 10px;
+}
