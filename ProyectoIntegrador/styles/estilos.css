@@ -110,3 +110,29 @@ header p {
 .special-text li {
     margin-bottom: 10px;
 }
+/* Estilos para el nuevo submenú */
+.subnav-container {
+    text-align: center;
+}
+
+.subnav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-top: 10px; /* Espacio entre el submenú y el contenido anterior */
+}
+
+.subnav-list li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre los elementos del submenú */
+}
+
+.subnav-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.subnav-link:hover {
+    color: #555;
+}
